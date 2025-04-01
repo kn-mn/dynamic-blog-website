@@ -44,6 +44,7 @@ h1 {
     color: var(--text-color);
 }
 
+/* Create New Post Button */
 .create-post{
     display: block;
     margin: 10px auto;
@@ -54,4 +55,69 @@ h1 {
     transition: background-color 0.3s ease;
     width: 150px;
     text-align: center;
+}
+
+#createPost {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: var(--font-weight-bold);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#createPost:hover {
+    background-color: var(--background-color);
+}
+
+/* Create Post From */
+.newPost {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.newPost input[type="text"],
+.newPost textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+.newPost button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    font-size: var(--font-size);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newPost button:hover {
+    background-color: var(--background-color);
+}
+
+#content {
+    min-height: 250px;
+    width: 100%;
+    box-sizing: border-box;
 }
