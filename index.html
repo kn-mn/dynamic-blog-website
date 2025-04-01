@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3: Build a Dynamic Blog Website Using Git and GitHub</title>
     <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
+    <script src="src/script.js" defer></script>
 </head>
 <body>
 
 <!-- Header -->
-    <section class="header">
-        <h1>Assignment 3: Build a Dynamic Blog Website Using Git and GitHub</h1>
-        <p>Homepage</p>
-    </section>
+<section class="header">
+    <h1>Create Post</h1>
+</section>
 
-<!-- Create Post -->
-    <section class="create-post">
-        <a id="createPost" href="new-post.html">Create New Post</a>
-    </section> 
+<section class="newPost">
+    <form method="POST">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+    
+        <label for="content">Content:</label>
+        <textarea id="content" name="content" required></textarea>
+    
+        <button type="submit">Submit</button>
+    </form>    
+</section>
+
 </body>
 </html>
