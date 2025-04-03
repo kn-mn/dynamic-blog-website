@@ -194,3 +194,56 @@ posts-list {
     min-height: 250px;
     text-align: center;
 }
+
+/* Responsive Styling */
+
+/* Phones */
+@media (max-width: 600px) {
+    .header,
+    .create-post,
+    .newPost,
+    .post,
+    .posts-list {
+      width: 90%;
+      margin: 10px auto;
+      padding: 10px;
+    }
+  
+    .create-post-button,
+    .button {
+      width: 100%;
+      padding: 12px;
+      margin: 5px auto;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    body {
+      font-size: 14px;
+    }
+  }
+  
+  /* Tablets */
+  @media (min-width: 601px) and (max-width: 1024px) {
+    .header,
+    .create-post,
+    .newPost,
+    .post,
+    .posts-list {
+      width: 90%;
+      margin: 15px auto;
+      padding: 15px;
+    }
+  
+    .create-post-button,
+    .button {
+      width: 200px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  }
+  
