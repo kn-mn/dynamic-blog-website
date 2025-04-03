@@ -3,7 +3,8 @@
     --secondary-color: #dcdcdc;
     --background-color: #bfbfbf;
     --text-color: #4d4d4d;
-    --font-family: 'futura-pt', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
+    --dark-color: #333;
 
     --font-size: 16px;
     --font-size-large: 24px;
@@ -13,9 +14,9 @@
     --line-height: 1.5;
 }
 
-body{
-    margin: 0;
-    padding: 0;
+body {
+    margin: 10px;
+    padding: 10px;
     font-family: var(--font-family);
     font-size: var(--font-size);
     line-height: var(--line-height);
@@ -27,14 +28,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family);
     color: var(--text-color);
 }
+
 h1 {
     font-size: var(--font-size-large);
     font-weight: var(--font-weight-bold);
     text-align: center;
 }
 
-.header{
-    width:300px;
+.header {
+    width: 300px;
     padding: 20px;
     margin: 20px auto;
     border: 3px solid var(--dark-color);
@@ -44,8 +46,13 @@ h1 {
     color: var(--text-color);
 }
 
-/* Create New Post Button */
-.create-post{
+/* Homepage (index.html) */
+.create-post {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.create-post-button {
     display: block;
     margin: 10px auto;
     padding: 10px;
@@ -57,23 +64,34 @@ h1 {
     text-align: center;
 }
 
-#createPost {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px auto;
-    background-color: var(--secondary-color);
-    color: black;
+.posts-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.posts-list ul li {
+    background-color: var(--primary-color);
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.posts-list a {
     text-decoration: none;
-    border-radius: 8px;
-    font-weight: var(--font-weight-bold);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: var(--text-color);
+    display: block;
+    cursor: pointer;
 }
 
-#createPost:hover {
-    background-color: var(--background-color);
+.posts-list a:hover {
+    background-color: transparent;
 }
 
-/* Create Post From */
+/* Create Post Form (new-post.html) */
 .newPost {
     display: flex;
     flex-direction: column;
@@ -100,7 +118,49 @@ h1 {
     box-sizing: border-box;
 }
 
-.newPost button {
+#postContent {
+    min-height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Post Page (post.html) */
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 400px;
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    word-break: break-all;
+}
+
+.post input[type="text"],
+.post textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    box-sizing: border-box;
+}
+
+.actions{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+/* Button styling */
+.button {
     padding: 10px 20px;
     margin-top: 10px;
     background-color: var(--secondary-color);
@@ -111,13 +171,20 @@ h1 {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-.newPost button:hover {
+  
+.button:hover {
     background-color: var(--background-color);
 }
-
-#content {
+  
+.posts-list {
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    width: 500px;
     min-height: 250px;
-    width: 100%;
-    box-sizing: border-box;
+    text-align: center;
 }

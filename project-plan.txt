@@ -1,0 +1,15 @@
+1. Create a homepage on index.html that has an option to create new blog posts (redirecting to new-post.html) and a section displaying an unordered list of existing blog posts (retrieved from localStorage).
+
+2. Develop index.html with an unordered list (with the ID "postsList") that will hold and display the blog posts fetched from localStorage.
+
+3. Use JSON to store, organize, and format the blog items in a variable named posts.
+
+4. Establish an ID system by using the post's index in the posts array stored in localStorage. Each post is implicitly associated with tpihis index, which enables read, update, and delete functions.
+
+5. On new-post.html, create a form for blog posts that includes fields for a title and content. Include buttons to submit, reset the form, and view existing blog posts. The blog posts will be stored in localStorage.
+
+6. In post.html, use the URL’s id parameter to load and display a specific blog post from localStorage. Provide options to edit or delete that post.
+
+7. On index.html, check if posts exist; if so, create a list item for each post linking to post.html with its corresponding id. The h1 tag shows the post title, and the p tag displays a preview of the content up to 50 characters (truncated).
+
+8. On the post.html view page, include options to delete the current post, create a new post, and edit the current post (which redirects back to new-post.html with the title and content preloaded).
