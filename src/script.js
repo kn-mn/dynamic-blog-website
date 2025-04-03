@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
       let li = document.createElement('li');
       li.innerHTML = 
                     '<a href="post.html?id=' + i + '">' +
-                    '<h1>' + post.title + '</h1>' +
+                    '<h3>' + post.title + '</h3>' +
                     '<p>' + post.content.substring(0, 50) + '...</p>' +
                     '</a>';
       postsListEl.appendChild(li);
