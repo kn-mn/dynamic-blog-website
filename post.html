@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Post</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="src/script.js" defer></script>
 </head>
 <body>
-    <h1>View/Edit Post</h1>
+  <!-- Header -->
+  <section class="header">
+      <h1>View Post</h1>
+  </section>
+
+  <!-- Post Display Section -->
+  <section class="post">
+      <h2 id="postTitleDisplay"></h2>
+      <p id="postContentDisplay"></p>
+  </section>
+
+  <!-- Actions Section -->
+  <section class="actions">
+      <button type="button" id="editBtn" class="button">Edit</button>
+      <button type="button" id="deleteBtn" class="button">Delete</button>
+      <button type="button" id="createPostBtn" class="button">Create New Post</button>
+  </section>
+  
 </body>
 </html>
