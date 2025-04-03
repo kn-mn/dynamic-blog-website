@@ -1,23 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3: Build a Dynamic Blog Website Using Git and GitHub</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <script src="scripts/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 3: Build a Dynamic Blog Website Using Git and GitHub</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <script src="src/script.js" defer></script>
 </head>
 <body>
 
-<!-- Header -->
-    <section class="header">
-        <h1>Assignment 3: Build a Dynamic Blog Website Using Git and GitHub</h1>
-        <p>Homepage</p>
-    </section>
+  <!-- Header -->
+  <section class="header">
+      <h1>Assignment 3: Build a Dynamic Blog Website Using Git and GitHub</h1>
+      <h2>Homepage</h2>
+  </section>
 
-<!-- Create Post -->
-    <section class="create-post">
-        <a id="createPost" href="new-post.html">Create New Post</a>
-    </section> 
+  <!-- Create Post -->
+  <section class="create-post">
+      <button type="button" id="createPostBtn" class="button">Create New Post</button>
+  </section> 
+
+  <!-- Post List -->
+  <section class="posts-list">
+      <ul id="postsList"></ul>
+  </section>
+
 </body>
 </html>
