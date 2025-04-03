@@ -4,7 +4,7 @@
 
 3. Use JSON to store, organize, and format the blog items in a variable named posts.
 
-4. Establish an ID system by using the post's index in the posts array stored in localStorage. Each post is implicitly associated with tpihis index, which enables read, update, and delete functions.
+4. Establish an ID system by using the post's index in the posts array stored in localStorage. Each post is implicitly associated with this index, which enables read, update, and delete functions.
 
 5. On new-post.html, create a form for blog posts that includes fields for a title and content. Include buttons to submit, reset the form, and view existing blog posts. The blog posts will be stored in localStorage.
 
