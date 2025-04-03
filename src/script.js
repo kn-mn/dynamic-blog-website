@@ -41,13 +41,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // NEW-POST.HTML
   if (postForm) {
     let pageUrl = window.location.href;
-    
-    let postId;
-    if (pageUrl.includes('id=')) {
-      postId = Number(pageUrl.split('id=')[1]);
-    } else {
-      postId = null;
-    }
+    let postId = pageUrl.includes('id=') ? Number(pageUrl.split('id=')[1]) : null;
+
 
     if (postId !== null && posts[postId]) {
       titleInput.value = posts[postId].title;
@@ -71,9 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
       
       localStorage.setItem('blogPosts', JSON.stringify(posts));
       window.location.href = postId !== null ? 
-        'post.html?id=' + postId : 
-        'index.html';
-    };
+      'post.html?id=' + postId : 
+      'post.html?id=' + (posts.length - 1);
+    };    
 
     if (viewBtn) {
       viewBtn.onclick = function() {
